@@ -1,0 +1,370 @@
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;!DOCTYPE html&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;html lang="en"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta charset="UTF-8"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;title&gt;Lawn Care Estimate Tool&lt;/title&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; body {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-family: Arial, sans-serif;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; form {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 400px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; label, input, select {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: block;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; input, select, button {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 1em;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .results {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 1px solid #ccc;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background-color: #f9f9f9;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .disclaimer {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 0.9em;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #555;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;body&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;h1&gt;Lawn Care Estimate Tool&lt;/h1&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;form id="lawnEstimatorForm" action="https://formspree.io/f/your-form-id" method="POST" onsubmit="handleFormSubmission(event);"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label for="lawnSize"&gt;Lawn Size (in sq ft):&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="number" id="lawnSize" name="lawnSize" required&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label for="treatmentType"&gt;Select Treatment Type:&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;select id="treatmentType" name="treatmentType" required&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;option value=""&gt;-- Select an Option --&lt;/option&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;option value="aeration"&gt;Aeration&lt;/option&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;option value="8_treatments"&gt;8 Treatments Per Year&lt;/option&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;option value="seeding"&gt;Lawn Seeding (Fescue Only)&lt;/option&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/select&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="email" id="email" name="email" required&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;label for="phone"&gt;Phone Number (optional):&lt;/label&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="tel" id="phone" name="phone"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button type="submit"&gt;Get Estimate&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/form&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;div id="results" class="results" style="display: none;"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2&gt;Your Estimated Cost&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p id="estimate"&gt;&lt;/p&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;p class="disclaimer"&gt;Disclaimer: The price is subject to change depending on the accuracy of the information provided.&lt;/p&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;script&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function handleFormSubmission(event) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; event.preventDefault();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Get user inputs
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const lawnSize = parseFloat(document.getElementById('lawnSize').value);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const treatmentType = document.getElementById('treatmentType').value;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const email = document.getElementById('email').value;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const phone = document.getElementById('phone').value;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Ensure valid inputs
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (!lawnSize || !treatmentType || !email) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; alert("Please fill in all required fields.");
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; return;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Pricing rules
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const pricing = {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; aeration: { rate: 25, min: 100 },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; "8_treatments": { rate: 15, min: 65 },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; seeding: { rate: 70, min: 189 },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; };
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Calculate estimate
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const cost = Math.max(pricing[treatmentType].rate * (lawnSize / 1000), pricing[treatmentType].min);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('estimate').textContent = `$${cost.toFixed(2)}`;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Show the results
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('results').style.display = 'block';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; // Send form data to Formspree
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const formData = new FormData();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; formData.append('Lawn Size', lawnSize);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; formData.append('Treatment Type', treatmentType);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; formData.append('Email', email);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (phone) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; formData.append('Phone', phone);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; fetch('https://formspree.io/f/your-form-id', {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; method: 'POST',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; body: formData,
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; })
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .then((response) =&gt; {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (response.ok) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; console.log("Form submitted successfully.");
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; console.error("Error submitting form.");
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; })
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .catch((error) =&gt; {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; console.error("Error:", error);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/script&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/body&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/html&gt;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
